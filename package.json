@@ -92,7 +92,8 @@
     "webpack": "3.6.0",
     "webpack-dev-middleware": "1.12.0",
     "webpack-hot-middleware": "2.19.1",
-    "webpack-obfuscator": "^0.12.5"
+    "webpack-obfuscator": "^0.12.5",
+    "shelljs": "^0.7.8"
   },
   "scripts": {
     "dev": "cross-env HOST=${host} PORT=${port} NODE_ENV=development  babel-node build/script/dev-server.js dev",
