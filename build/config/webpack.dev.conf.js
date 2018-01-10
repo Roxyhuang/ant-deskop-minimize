@@ -3,7 +3,6 @@ import chalk from 'chalk';
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import DashboardPlugin from 'webpack-dashboard/plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import OpenBrowserPlugin from 'open-browser-webpack-plugin';
 import AutoDllPlugin from 'autodll-webpack-plugin';
@@ -62,7 +61,6 @@ webpackDevOutput = {
 webpackConfig.output = Object.assign(webpackConfig.output, webpackDevOutput);
 
 webpackConfig.plugins.push(
-  new DashboardPlugin({port: 3300}),
   new webpack.LoaderOptionsPlugin({
     debug: true
   }),
