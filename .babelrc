@@ -14,7 +14,9 @@
     }
   },
   "plugins": [
+    "syntax-dynamic-import",
     "transform-decorators-legacy",
-    "transform-runtime"
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "style": true }]
   ]
 }
