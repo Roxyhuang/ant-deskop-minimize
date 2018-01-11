@@ -6,6 +6,8 @@ module.exports = {
   ],
 
   rules: {
+    'block-no-empty': null,
+    'no-empty-source': null,
     'property-no-unknown': [
       true,
       {
