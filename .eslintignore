@@ -4,3 +4,4 @@ build/*
 src/backend/*
 public/assets/flexible.js
 mock/*
+*/node_modules/
