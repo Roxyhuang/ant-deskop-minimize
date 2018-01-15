@@ -161,26 +161,26 @@ webpackConfig.module.rules.push(
           publicPath: `${PUBLIC_PATH}/`,
         }
       },
-      {
-        loader: 'image-webpack-loader',
-        options: {
-          query: {
-            mozjpeg: {
-              progressive: true,
-            },
-            gifsicle: {
-              interlaced: true,
-            },
-            optipng: {
-              optimizationLevel: 7,
-            },
-            pngquant: {
-              quality: '65-90',
-              speed: 4
-            }
-          },
-        }
-      }
+      // {
+      //   loader: 'image-webpack-loader',
+      //   options: {
+      //     query: {
+      //       mozjpeg: {
+      //         progressive: true,
+      //       },
+      //       gifsicle: {
+      //         interlaced: true,
+      //       },
+      //       optipng: {
+      //         optimizationLevel: 7,
+      //       },
+      //       pngquant: {
+      //         quality: '65-90',
+      //         speed: 4
+      //       }
+      //     },
+      //   }
+      // }
     ],
   },
 );

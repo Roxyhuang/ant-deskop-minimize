@@ -21,7 +21,8 @@ class ListA extends React.Component {
   render() {
     return (
       <div>
-        <div className={s.listA}>A</div>
+        <div className={s.listA} style={{ background: `url(${require('../../../assets/img/icon/menu.png')})` }}>A</div>
+        <input placeholder="test" />
       </div>
 
     );

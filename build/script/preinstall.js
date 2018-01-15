@@ -31,5 +31,3 @@ exec(script, function (err, stdout, stderr) {
   }
 });
 
-
-// console.log(preList.devDependencies);

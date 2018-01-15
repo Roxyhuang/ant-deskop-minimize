@@ -1,14 +1,12 @@
 import config from 'config';
 import path from 'path';
 import webpack from 'webpack';
-import chalk from 'chalk';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import SaveAssetsJson from 'assets-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import JavaScriptObfuscator from 'webpack-obfuscator';
-// import ZipPlugin from 'zip-webpack-plugin';
 
 import webpackConfig from './webpack.base.conf';
 
