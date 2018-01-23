@@ -18,7 +18,7 @@ const isFirst = !fs.existsSync(`${execPath}/package.json`);
 
 const currentMd5 = md5(JSON.stringify(preListObj));
 
-let script = `npm install --prefix ${execPath}`;
+let script = `cd ${execPath} && npm i`;
 
 let isUpdate = false;
 
