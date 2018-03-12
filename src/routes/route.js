@@ -28,7 +28,7 @@ const routes = (
       <Switch>
         <Redirect exact from={'/' || '/index.html'} to="/list-a" />
         <Route path="/list-a" component={ListA} />
-        <Route path="/list-b" component={ListB} />
+        <Route path="/list-b/:test" component={ListB} />
         <Route path="/list-c" component={ListC} />
         <Redirect exact from="/index.html" to="/list-a" />
         <Route component={noMatch} />
