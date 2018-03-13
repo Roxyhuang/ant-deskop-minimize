@@ -35,7 +35,12 @@ entryConfig = Object.assign(entryConfig, BUNDLE_LIST);
 // Config for Javascript file
 
 Object.entries(APP_ENTRY_POINT).forEach(item => {
-  Object.assign(entryConfig, {[`assets/js/${item[0]}`]: [item[1]]});
+  Object.assign(entryConfig, {
+    [`assets/js/${item[0]}`]: [
+      'babel-polyfill',
+      item[1],
+    ]
+  });
 });
 
 //Config for output
