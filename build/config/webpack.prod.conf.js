@@ -81,6 +81,7 @@ if (IS_UGLIFYJS) {
       sourceMap: true,
       compress: {
         warnings: false,
+        pure_funcs: config.get('env') === 'production'?[ 'console.log' ]: [],
         drop_console: config.get('env') === 'production',
         sequences: true,
         properties: true,
